@@ -1,0 +1,69 @@
+body{
+    background-color: #555;
+}
+.topP{
+    float:right;
+    margin-right:20px;
+}
+.parallax-container{
+    height: 580px;
+}
+.nav-extended{
+    background-color: #032e8c;
+    text-shadow: 1px 1px #000;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+}
+h2{
+    margin-top: 20px;
+    margin-left:20px;
+}
+.jumbotron{
+    margin-top:40px;
+    border-style: unset;
+
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 100px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:#555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #ffffff;
+    color: #555;
+}
+.page-footer{
+    text-shadow: 1px 1px #000;
+    background-color:#032e8c;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.copyright{
+    float:right;
+    margin-right: 40px;
+}
+.appText {
+    color: white; 
+    font-size: 70px; 
+    width: 100%; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px #000;
+}
+#leftFoot{
+    margin-left:20px;
+}
+#icons{
+    margin-left:30px;
+}
