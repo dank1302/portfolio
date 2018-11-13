@@ -1,21 +1,22 @@
+<?php include('form_process.php'); ?>
 <!Doctype html>
 <html lang="en-us">
     <head>
         <meta charset="UTF8">
-        <title>Portfolio-Contact Page</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        <title>Portfolio-Contact-Me</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
 		 crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 		<!--bootstrap cdn-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-		 crossorigin="anonymous">
-		 
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+         crossorigin="anonymous">
 
-    <body>
+         </head>
+
+         
+         <body>
             <div class="parallax-container">
                 
                     <div class="parallax">
@@ -48,19 +49,21 @@
                         <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
                             <div class="panel panel-danger">
                                 <div class="panel-body">
-                                    <form id="reused_form" action="contact-form-handler.php" method="POST" enctype="text/plain">
+                                    <form id="reused_form" action="<?= $_SERVER['PHP_SELF']; ?>'" method="POST" enctype="text/plain">
                                          <div class="form-group">
                                              <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
-                                             <input type="text" name="name" class="form-control" placeholder="Enter Name">
-                                         </div>
+                                             <input type="text" value="<?= $name ?>" name="name" class="form-control" placeholder="Enter Name">
+                                             <span class="error"><?= $name_error ?></span>
+                                            </div>
                                          <div class="form-group">
                                              <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
-                                             <input type="email" name="email" class="form-control" placeholder="Enter Email">
-                                         </div>
+                                             <input type="text" value="<?= $email ?>" name="email" class="form-control" placeholder="Enter Email">
+                                             <span class="error"><?= $email_error ?></span>
+                                            </div>
                                          <div class="form-group">
                                              <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
                                              <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
-                                         </div>
+                                        </div>
             
             
                                          <div class="form-group">
@@ -138,6 +141,3 @@
        <!--app.js-->
        <script src="assets/js/app.js"></script>
      
-        </body>
-
-        </html>
