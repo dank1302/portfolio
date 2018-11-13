@@ -9,7 +9,7 @@ body{
     margin-right:20px;
 }
 .parallax-container{
-    height: 600px;
+    height: 580px;
 }
 .nav-extended{
     background-color: #032e8c;
@@ -22,6 +22,8 @@ text-align: center;
 }
 .myName{
     font-size: 50px;
+    font-family: 'Bangers', cursive;
+
 }
 .jumbotron{
     margin-top:40px;
@@ -75,9 +77,11 @@ text-align: center;
 }
 .display-4{
     text-align: center;
+    font-family: 'Bangers', cursive;
 }
 .lead{
     text-align: center;
+    font-family: 'Bangers', cursive;
 }
 .transBox{
         
