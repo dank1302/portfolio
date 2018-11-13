@@ -17,9 +17,11 @@ body{
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     padding-top:30px;
 }
-.brand-logo{
-    font-size: xx-large;
-    margin-left: 680px;
+.nameHead{
+text-align: center;
+}
+.myName{
+    font-size: 50px;
 }
 .jumbotron{
     margin-top:40px;
