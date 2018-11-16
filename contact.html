@@ -44,7 +44,7 @@
         <div class="jumbotron">
                 <h2 class="display-4">Contact Me</h2>
                 <hr class="my-4">
-                <div class="container form-top" id="conForm">
+               <!-- <div class="container form-top" id="conForm">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
                             <div class="panel panel-danger">
@@ -73,7 +73,25 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
+                <div class="wrapper">
+                    <div class="contact__container">
+                            
+                            <form class="contact__form" action="https://formspree.io/dank1302@yahoo.com" method="POST">
+                                    <p class="conInfo">Name</p>
+                                    <input class="contact__form-input" name="name" type="text">
+            
+                                    <p class="conInfo">Email</p>
+                                    <input class="contact__form-input" name="email" type="text">
+            
+                                    <p class="conInfo">Message</p>
+                                    <textarea class="contact__form-textarea" name="message" type="text"></textarea>
+            
+                                    <input type="submit" value="Send message">
+                            </form>
+                    </div>
+            </div>
+
                 
               </div>
 
