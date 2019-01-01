@@ -20,7 +20,7 @@ text-align: center; /* center text */
 }
 .myName{
     font-size: 70px; /* set font-size */
-    font-family: 'Bangers', cursive; /* set font */
+    font-family: 'Bungee Inline', cursive; /* set font */
 
 }
 .jumbotron{
@@ -75,11 +75,11 @@ text-align: center; /* center text */
 }
 .display-4{
     text-align: center; /* align text center of page */
-    font-family: 'Bangers', cursive; /* set font */
+    font-family: 'Bungee Inline', cursive; /* set font */
 }
 .lead{
     text-align: center; /* align text center of page */
-    font-family: 'Bangers', cursive; /*set font */
+    font-family: 'Oranienbaum', serif; /*set font */
 }
 
 #nameHead{
